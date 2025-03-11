@@ -7,7 +7,7 @@ app.use(cors({
 }))
 app.use(Express.json({limit:"16kb"}))
 app.use(Express.urlencoded({extended:true,limit:"16kb"}))
-import recipeRouter from './Routes/recipe.routes.js'
+import recipeRouter from './Routes/Recipe.routes.js'
 app.use('/api/v1/recipes',recipeRouter)
 
 export default app;
